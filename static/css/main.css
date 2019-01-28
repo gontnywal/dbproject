@@ -1,0 +1,255 @@
+body{
+  font-family: 'Open-sans', sans-serif;
+  font-size: 18px;
+  line-height: 1.5em;
+  margin: 0;
+  padding: 0;
+  /* background-color: gray */
+}
+
+.container{
+  margin: auto;
+  max-width: 1170px;
+}
+
+.container #list-pen{
+  padding: 10px;
+  margin-right: 5px;
+}
+
+img{
+  width: 100%;
+}
+
+#icons{
+  padding: 150px;
+}
+
+/* COMMON CLASSES */
+.primary-text{
+  color: #56a79a;
+}
+
+.primary-background{
+  background: #56a79a;
+}
+
+/* HEADER */
+#main_header{
+  border-bottom: 1px solid #56a79a;
+}
+
+/* NAVBAR */
+#nav_bar li{
+  padding-right: 20px;
+  display: inline;
+  list-style: none;
+}
+
+#nav_bar a{
+  text-decoration: none;
+  color: #888;
+}
+
+#nav_bar li.current a, #nav_bar a:hover{
+  color:#56a79a;
+  border-bottom: 3px solid #56a79a;
+  padding-bottom: 3px;
+}
+
+.modal{
+  display: none;
+  /* position: fixed; */
+  position: absolute;
+  z-index: 0; /*order of elements; higher, the nearer to the top the element is*/
+  left: 0;
+  top: 0;
+  /* height: 100%; */
+  width: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.2)
+}
+
+.modal-content{
+  background-color: #f4f4f4;
+  margin: 20% auto;
+  padding: 20px;
+  width: 50%;
+  box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.2), 0 7px 20px 0 rgba(0, 0, 0, 0.17);
+  animation-name: modalopen;
+  animation-duration: 1s;
+}
+
+.closeBtn{
+  color: #ccc;
+  font-size: 30px;
+  float: right;
+}
+
+.closeBtn:hover, .closeBtn:focus{
+  color: #333;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+@keyframes modalopen{
+  from{opacity: 0;}
+  to{opacity: 1;}
+}
+
+/* SHOWCASE */
+#showcase{
+  background: url('../images/pc_on_table.jpg') no-repeat center center;
+  border-bottom: 3px solid #56a79a;
+  margin-bottom: 30px;
+}
+
+#showcase .row{
+  height: 600px;
+
+}
+
+#showcase{
+  background: url('../images/store.jpg') no-repeat center center;
+}
+
+/* ICONS */
+section i{
+  font-size: 36px;
+  color: #56a79a;
+}
+form{
+  max-width: 480px;
+  margin: 0 auto;
+  margin-top: 80px;
+}
+.table{
+  width: auto;
+}
+/* FORM */
+.task_form{
+  display: grid;
+  grid-template-columns: 1fr;
+  padding: 1em;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  border: 2px solid #56a79a;
+  margin-top: 80px;
+  width: 480px;
+}
+
+.modal_form{
+  display: grid;
+  grid-template-columns: 1fr;
+  padding: 1em;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin-left: auto;
+  margin-right: auto;
+}
+.modal_form input{
+  padding: .5em;
+  width: 100%;
+}
+
+#submit{
+  text-decoration: none;
+}
+
+.modal_form button{
+  margin-top: 10px;
+  background: #56a79a;
+  width: 100%;
+  border: 0px;
+  padding: 1em;
+  color: white;
+  text-transform: uppercase;
+  outline: 0px;
+  transition: background-color 2s ease-out;
+}
+
+#modalBtn{
+  /* margin-top: 10px; */
+  background: #56a79a;
+  /* width: 100%; */
+  border: 0px;
+  padding: 1em;
+  color: white;
+  text-transform: uppercase;
+  outline: 0px;
+  margin-right: 10px;
+  transition: background-color 2s ease-out;
+}
+
+.task_form p{
+  margin: 0;
+}
+
+.task_form button{
+  margin-top: 10px;
+  background: #56a79a;
+  width: 100%;
+  border: 0px;
+  padding: 1em;
+  color: white;
+  text-transform: uppercase;
+  outline: 0px;
+  transition: background-color 2s ease-out;
+}
+
+.task_form button:hover, .task_form button:focus{
+  background: #888;
+}
+
+.task_form input{
+  padding: 1em;
+  width: 100%;
+}
+
+
+.task_form #submit{
+  text-decoration: none;
+}
+
+table{
+  margin-top: 50px;
+  margin-left: auto;
+  margin-right: auto;
+  border: 1px solid gray;
+  border-collapse: collapse;
+  width: 80%;
+}
+
+th{
+  background: coral;
+  color:white;
+}
+
+tr:nth-child(even){
+  background: #e8e8e8;
+}
+
+tr:nth-child(odd){
+  background: white;
+}
+
+th, td{
+  text-align: center;
+  padding: 10px;
+}
+
+td #pen{
+  padding: 10px;
+  margin-right: 5px;
+}
+
+#task_list{
+  text-decoration: none;
+}
+#main_footer{
+  text-align: center;
+}
+#copyright{
+  margin-top: 80px;
+}
+h2, #items{
+  text-align: center;
+}
